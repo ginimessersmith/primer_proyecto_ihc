@@ -1,1 +1,170 @@
-<p>formulario-page works!</p>
+<div class="container font-k2d">
+  <div class="d-flex justify-content-between">
+    <h2>Paso 3, Formulario y Datos</h2>
+    <button class="btn btn-primary m-2" (click)="navigateToCardStudent()">
+      <h4>Siguiente Paso</h4>
+    </button>
+  </div>
+
+  <div class="row">
+    <div class="col-2">
+      <div class="row">
+        <button class="btn btn-primary mb-2"
+        (click)="navigateToRegisterStuden()">
+          <h4>Agregar +</h4>
+        </button>
+      </div>
+      <div class="row mt-2 mb-2">
+        <shared-side-bar></shared-side-bar>
+      </div>
+    </div>
+    <!-- inicio Formulario -->
+    <div class="col-10 ps-5 mb-2">
+      <h5>Datos del Estudiante:</h5>
+      <hr />
+      <div class="row">
+        <div class="col-2">
+          <h5>jose</h5>
+        </div>
+        <div class="col-8">
+          <button class="btn btn-outline-secondary">Editar Informacion</button>
+        </div>
+        <div class="col-2">
+          <button class="btn btn-danger">
+            <div class="row">
+              <div class="col">
+                <h5>Eliminar</h5>
+              </div>
+              <div class="col">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-archive"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+              </div>
+            </div>
+          </button>
+
+        </div>
+      </div>
+      <div class="row m-4">
+        <!-- input desplegable ciudad -->
+        <div class="col">
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01"
+              >Seleccione un Municipio :</label
+            >
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>...</option>
+              <option value="1">Cotoca</option>
+              <option value="2">Santa Cruz de la Sierra</option>
+              <option value="3">Warnes</option>
+              <option value="3">Montero</option>
+            </select>
+          </div>
+          <!-- fin input desplegable colegio -->
+        </div>
+        <div class="col">
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01"
+              >Seleccione un Colegio :</label
+            >
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>...</option>
+              <option value="1">U.E. Don Bosco</option>
+              <option value="1">U.E. Angela Pinckert</option>
+              <option value="1">U.E. Britanico</option>
+              <option value="1">U.E. Aleman</option>
+
+            </select>
+          </div>
+          <!-- fin input desplegable colegio -->
+        </div>
+      </div>
+      <!-- datos del colegio -->
+      <div class="row">
+        <h5>Datos del Colegio:</h5>
+        <hr />
+        <h5>Colegio Don Bosco</h5>
+        <h5>Direccio:</h5>
+        <h5>Nro de Telefono</h5>
+
+        <div class="col-3 mt-4 mb-4">
+          <h5>Nivel:</h5>
+        </div>
+
+        <!-- inicio botones del nivel -->
+        <div class="col-3 mt-4 mb-4">
+          <button class="btn btn-outline-primary">Inicial</button>
+        </div>
+        <div class="col-3 mt-4 mb-4">
+          <button class="btn btn-outline-primary">Primaria</button>
+        </div>
+        <div class="col-3 mt-4 mb-4">
+          <button class="btn btn-outline-primary">Secundaria</button>
+        </div>
+        <!-- fin botones del nivel -->
+        <!-- inicio seleccion del curso -->
+        <div class="col-6">
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01"
+              >Seleccione un Curso :</label
+            >
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>...</option>
+              <option value="1">1ero</option>
+              <option value="2">2do</option>
+              <option value="3">3ero</option>
+            </select>
+          </div>
+          <!-- fin seleccion del curso -->
+        </div>
+      </div>
+      <!-- fin datos del colegio -->
+      <!-- Inicio documentos -->
+      <div class="row">
+        <h5>Documentos del Estudiante:</h5>
+        <hr />
+        <div class="col-4">
+          <h5>Carnet</h5>
+          <div class="row">
+            <div class="col">
+              <h6>Anverso</h6>
+              <div>
+                <input type="file">
+              </div>
+            </div>
+            <div class="col">
+              <h6>Reverso</h6>
+              <div>
+                <input  type="file">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-4">
+          <h5>Certificado de nacimiento</h5>
+          <div>
+            <input type="file">
+          </div>
+        </div>
+        <div class="col-4">
+          <h5>Esquema de vacunacion</h5>
+          <div>
+            <input type="file">
+          </div>
+        </div>
+      </div>
+      <!-- Inicio documentos -->
+    </div>
+    <!-- fin formulario -->
+  </div>
+</div>

@@ -1,2 +1,48 @@
-<p>inscripcion layout-page works!</p>
-<router-outlet></router-outlet>
+<div class="container" >
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row m-2">
+        <div class="custom-rectangle mt-2 mb-2">
+          <h1 class="underline-result-request">Requisitos</h1>
+          <h4>1: Carnet de identidad</h4>
+          <h4>2: Fotocopia del esquema de vacunacion</h4>
+          <h4>1: Certificado de nacimiento original</h4>
+        </div>
+        <div class="custom-rectangle mt-2 mb-2">
+          <h1 class="underline-result-request">Resultado</h1>
+          <h4>
+            En caso de que haya registrado un estudiante y desee ver el
+            resultado del sorteo
+          </h4>
+          <div class="text-center">
+            <button class="btn btn-primary">Ver Resultados</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div
+        class="h-100 d-flex align-items-center justify-content-center"
+        style="background-color: #ffffff"
+      >
+        <div
+          class="custom-rectangle mt-2 mb-2"
+          style="background-color: #ffffff; color: black"
+        >
+          <h2>ingrese Aqui
+            <!-- background-color: #d9d9d9; -->
+          </h2>
+          <button
+            class="button-s"
+            style="background-color: #2b00ff"
+            (click)="navegarARegistroTutores()"
+          >
+            Comenzar Registro
+          </button>
+          <!-- <a routerLink="/register-parents">asdfa</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

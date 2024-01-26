@@ -1,1 +1,133 @@
-<p>register-studen-page works!</p>
+<div class="container font-k2d">
+  <div class="d-flex justify-content-between">
+    <!-- inicio titulo header-->
+    <h2>Paso 2, Registro de Estudiantes</h2>
+    <button class="btn btn-primary m-2" (click)="navigateToForm()">
+      <h4>Siguiente Paso</h4>
+    </button>
+    <!-- fin titulo header-->
+  </div>
+  <div class="row">
+    <div class="col-2 mt-5">
+      <shared-side-bar></shared-side-bar>
+    </div>
+    <div class="col-10">
+      <!-- incio input-->
+      <div class="input-group m-2 mb-4">
+        <div class="row">
+          <span class="input-group mt-2 mb-2">Apellido Paterno :</span>
+          <input type="text" aria-label="First name" class="form-control" />
+          <span class="input-group mt-2 mb-2">Apellido Materno :</span>
+          <input type="text" aria-label="First name" class="form-control" />
+          <span class="input-group mt-2 mb-2">Nombre :</span>
+          <input type="text" aria-label="First name" class="form-control" />
+          <div class="input-group mt-3 mb-3">
+            <div class="col-2">
+              <span class="input-group mt-2 mb-2">Fecha de Nacimiento :</span>
+            </div>
+
+            <div class="col-4">
+
+              <mat-form-field>
+                <input matInput [matDatepicker]="picker" placeholder="">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+            </div>
+            <div class="col-6mt-4">
+              <!-- d-flex align-items-center -->
+              <h4>Sexo:</h4>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Masculino
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                  checked
+                />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Femenino
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <!-- input Departamentos -->
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01"
+              >Seleccione una Departamento :</label
+            >
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>Departamento...</option>
+              <option value="1">La Paz</option>
+              <option value="1">Cochabamba</option>
+              <option value="1">Santa Cruz</option>
+              <option value="1">Beni</option>
+              <option value="1">Pando</option>
+              <option value="1">Oruro</option>
+              <option value="1">Potosi</option>
+              <option value="1">Chuquisaca</option>
+              <option value="1">Tarija</option>
+            </select>
+          </div>
+          <!-- fin input Provincia -->
+        </div>
+        <div class="col">
+          <!-- input Provincia -->
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01"
+              >Seleccione una Provincia :</label
+            >
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>Provincia...</option>
+              <option value="1">Andres Ibañez</option>
+              <option value="2">Angel Sandoval</option>
+              <option value="3">Obispo Santistevan</option>
+              <option value="3">Ñuflo de Chaves</option>
+              <option value="3">Cordillera</option>
+              <option value="3">Jose Miguel de Velasco</option>
+              <option value="3">Ichilo</option>
+              <option value="3">Chiquitos</option>
+              <option value="3">Ignacio Warnes</option>
+              <option value="3">Sara</option>
+              <option value="3">Guarayos</option>
+              <option value="3">German Busch</option>
+              <option value="3">Florida</option>
+              <option value="3">Vallegrande</option>
+              <option value="3">Manuel Maria Caballero</option>
+              <option value="3"></option>
+            </select>
+          </div>
+          <!-- fin input Provincia -->
+        </div>
+      </div>
+      <!-- fin input row -->
+      <div class="d-flex justify-content-center">
+        <button class="btn btn-danger m-4">Agregar +</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="button-addon2"
+              >
+                Fecha
+              </button> -->

@@ -1,1 +1,65 @@
-<p>register-tutor-page works!</p>
+<div class="container font-k2d">
+  <div class="d-flex justify-content-between">
+    <h2 >Paso 1, Registro de Padres o Tutor</h2>
+    <button
+    class="btn btn-primary m-2"
+    (click)="navigateToRegisterStudent()">
+      <h4>Siguiente Paso</h4>
+    </button>
+  </div>
+
+  <hr />
+  <h2>Registro de los Padres</h2>
+  <div class="row font-k2d">
+    <div class="col m-2">
+      <!-- inicio datos del padre -->
+      <h4>Datos del Padre</h4>
+      <div class="input-group">
+        <div class="row">
+          <span class="input-group mt-2 mb-2">Nombre y Apellidos :</span>
+          <input type="text" aria-label="First name" class="form-control" />
+          <span class="input-group mt-2 mb-2">Carnet de Identidad :</span>
+          <input type="text" aria-label="First name" class="form-control" />
+          <span class="input-group mt-2 mb-2">Numero de Telefono :</span>
+          <input type="text" aria-label="First name" class="form-control" />
+        </div>
+      </div>
+      <!-- fin datos de la madre -->
+    </div>
+    <div class="col m-2">
+      <!-- inicio datos de la madre -->
+      <h4>Datos de la Madre</h4>
+      <div class="input-group">
+        <div class="row">
+          <span class="input-group mt-2 mb-2">Nombre y Apellidos :</span>
+          <input type="text" aria-label="First name" class="form-control" />
+          <span class="input-group mt-2 mb-2">Carnet de Identidad :</span>
+          <input type="text" aria-label="First name" class="form-control" />
+          <span class="input-group mt-2 mb-2">Numero de Telefono :</span>
+          <input type="text" aria-label="First name" class="form-control" />
+        </div>
+      </div>
+      <!-- fin datos de la madre -->
+    </div>
+  </div>
+  <hr />
+  <h2>Registro de un Tutor</h2>
+  <h5>
+    En caso de que el estudiante solo tenga un tutor porfavor solo rellene esta
+    seccion.
+  </h5>
+  <div class="m-2">
+    <!-- inicio datos del tutor -->
+    <div class="input-group">
+      <div class="row">
+        <span class="input-group mt-2 mb-2">Nombre y Apellidos :</span>
+        <input type="text" aria-label="First name" class="form-control" />
+        <span class="input-group mt-2 mb-2">Carnet de Identidad :</span>
+        <input type="text" aria-label="First name" class="form-control" />
+        <span class="input-group mt-2 mb-2">Numero de Telefono :</span>
+        <input type="text" aria-label="First name" class="form-control" />
+      </div>
+    </div>
+    <!-- fin datos del tutor -->
+  </div>
+</div>
